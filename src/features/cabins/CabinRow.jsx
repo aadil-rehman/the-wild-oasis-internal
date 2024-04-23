@@ -39,7 +39,7 @@ const Price = styled.div`
 
 const Discount = styled.div`
 	font-family: "Sono";
-	font-weight: 600;
+	font-weight: 700;
 	color: var(--color-green-700);
 `;
 
