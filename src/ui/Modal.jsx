@@ -56,15 +56,12 @@ const Button = styled.button`
 const ModalContext = createContext();
 
 function Modal({ children }) {
-	const [openName, setOpenName] = useState(null);
+	const [openName, setOpenName] = useState("");
 
-	function open(openName) {
-		setOpenName(openName);
-	}
+	const close = () => setOpenName("");
 
-	function close() {
-		setOpenName(null);
-	}
+	// const open = setOpenName;
+	const open = (openName) => setOpenName(openName);
 
 	return (
 		<ModalContext.Provider value={{ open, close, openName }}>
