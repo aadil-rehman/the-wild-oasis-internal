@@ -1,13 +1,13 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import dotenv from "dotenv";
 
-// https://vitejs.dev/config/
+// Load environment variables from .env file
+dotenv.config();
+
 export default defineConfig({
 	plugins: [react()],
-	// build: {
-	// 	outDir: ".", // Output to root directory
-	// 	rollupOptions: {
-	// 		input: "./index.html", // Specify your input HTML file
-	// 	},
-	// },
+	server: {
+		port: Number(process.env.VITE_PORT) || 3000,
+	},
 });
