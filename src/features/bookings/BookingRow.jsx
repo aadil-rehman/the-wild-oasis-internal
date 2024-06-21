@@ -14,7 +14,7 @@ import {
 	HiTrash,
 } from "react-icons/hi2";
 import { useNavigate } from "react-router-dom";
-import { useChecout } from "../check-in-out/useCheckout";
+import { useCheckout } from "../check-in-out/useCheckout";
 import Modal from "../../ui/Modal";
 import ConfirmDelete from "../../ui/ConfirmDelete";
 import { useDeleteBooking } from "./useDeleteBooking";
@@ -63,7 +63,7 @@ function BookingRow({
 	const { deleteBooking, isDeleting } = useDeleteBooking();
 	const navigate = useNavigate();
 
-	const { checkout, isCheckingOut } = useChecout();
+	const { checkout, isCheckingOut } = useCheckout();
 	const statusToTagName = {
 		unconfirmed: "blue",
 		"checked-in": "green",

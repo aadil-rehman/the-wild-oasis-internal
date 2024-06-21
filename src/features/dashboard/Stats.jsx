@@ -1,4 +1,5 @@
 import {
+	HiOutlineBanknotes,
 	HiOutlineBriefcase,
 	HiOutlineCalendarDays,
 	HiOutlineChartBar,
@@ -31,7 +32,7 @@ function Stats({ bookings, confirmedStays, numDays, cabinsCount }) {
 			/>
 			<Stat
 				title="Sales"
-				icon={<HiOutlineBriefcase />}
+				icon={<HiOutlineBanknotes />}
 				color="green"
 				value={formatCurrency(sales)}
 			/>
