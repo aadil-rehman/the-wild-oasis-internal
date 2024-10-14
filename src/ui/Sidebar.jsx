@@ -11,7 +11,7 @@ const StyledSidebar = styled.aside`
 
 	display: flex;
 	flex-direction: column;
-	gap: 3.2rem;
+	gap: 3.1rem; //for git push purpose changing value from 3.2 to 3.2
 `;
 
 function Sidebar() {
